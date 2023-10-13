@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brayan Mauricio Calderon Prieto ">
+    <meta name="description" content="WELCOME ">
+    <meta name="keywords" content="formulario">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="stilos.css">
+
+    <link rel="icon" href="o/icons8-yandere.svg">
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="registrationForm" class="registro-form" action="#" method="post" onsubmit="guardarDatos()">
+            <h2 class="color1">Formulario de Registro</h2>
+    
+            <!-- Nombres -->
+            <div class="form-group">
+                <label for="nombres" id="color1">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+    
+            <!-- Apellidos -->
+            <div class="form-group">
+                <label for="apellidos" id="color1">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+    
+            <!-- Correo Electrónico -->
+            <div class="form-group">
+                <label for="correo" id="color1">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+    
+            <!-- Contraseña -->
+            <div class="form-group">
+                <label for="contrasena" id="color1">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+    
+            <!-- Género -->
+            <div class="form-group">
+                <label for="genero" id="color1">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+    
+            <!-- Botones -->
+            <div class="form-group botones">
+                <button type="submit" class="btn-2" id="enviar">Enviar</button>
+                <button type="button" class="btn-2" id="borrar">Borrar</button>
+            </div>
+        </form>
+        
+        <video id="video-background" autoplay loop muted alt="Video de fondo">
+            <source src="o/train_-_90408 (Original).mp4" type="video/mp4"> 
+        </video>
+    </div>
+        
+    <script src="guardarDatos.js"></script>
+    
+    <script src="k.js"></script>
+</body>
+</html>

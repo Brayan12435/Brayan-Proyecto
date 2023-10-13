@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #0d0d0d;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 80%;
+    min-height: 80%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.registro-form {
+    max-width: 600px;
+    width: 100%;
+    background-color: #080202;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    box-sizing: border-box;
+    backdrop-filter: blur(10px); 
+}
+
+.registro-form h2 {
+    font-size: 32px;
+    color: #F9BA39;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.registro-form label {
+    font-size: 18px;
+    color: #F9BA39;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.registro-form input,
+.registro-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #d3d2d2;
+    border-radius: 8px;
+    color: white;
+    background-color: #080202;
+    box-sizing: border-box;
+}
+
+.registro-form button {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #F9BA39;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.registro-form button:hover {
+    background-color: #d98c29;
+}
+
+/* el botón Borrar */
+.registro-form #borrar {
+    background-color: #545151;
+}
+
+.registro-form #borrar:hover {
+    background-color: #363535;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .registro-form button#borrar {
+        background-color: #545151;
+        margin-top: 10px;
+    }
+
+    .registro-form button#borrar:hover {
+        background-color: #363535;
+    }
+}
